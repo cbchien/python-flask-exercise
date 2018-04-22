@@ -41,6 +41,27 @@
 
 * Set up is all completed
     run `flask run` in terminal at the directory
+    
+* List of APIs:
+      [GET] /delivery                                retrun JSON of all delivery enteries 
+      
+      [POST] /delivery                               create a delivery entery (fields: businesstype, clientname, order_ID, comment)
+      
+      [GET] /delivery/<order_id>                     retrun JSON of delivery entry matching `order_id`
+      
+      [PUT] /delivery/<order_id>                     update delivery entry matching `order_id`
+      
+      [DELETE] /delivery/<order_id>                  delete delivery entry matching `order_id`
+      
+      [GET] /shippment                               retrun JSON of all delivery enteries 
+      
+      [POST] /shippment                              create a delivery entery (fields: ship_ID, contact_info, ship_area, ship_district, driver, car_type, car_ID, is_elevator, floors_byhand, amount_collect, comment)
+      
+      [GET] /shippment/<ship_id>                     retrun JSON of delivery entry matching `ship_id`
+      
+      [PUT] /shippment/<ship_id>                     update delivery entry matching `ship_id`
+      
+      [DELETE] /shippment/<ship_id>                  delete delivery entry matching `ship_id`
 
 References:
 
