@@ -1,6 +1,7 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
+
 import os
 
 app = Flask(__name__)
@@ -32,7 +33,7 @@ users_schema = UserSchema(many=True)
 # Main page
 @app.route("/")
 def index():
-    return "Index!"
+    return render_template('index.html')
 
 # endpoint to create new user
 @app.route("/user", methods=["POST"])

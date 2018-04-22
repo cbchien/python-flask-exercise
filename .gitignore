@@ -1,0 +1,5 @@
+.env
+Lib
+basic-db/migrations
+basic-db/__pycache__
+Scripts
