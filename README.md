@@ -43,6 +43,7 @@
     run `flask run` in terminal at the directory
     
 * List of APIs:
+
       [GET] /delivery                                retrun JSON of all delivery enteries 
       
       [POST] /delivery                               create a delivery entery (fields: businesstype, clientname, order_ID, comment)
